@@ -1,5 +1,5 @@
 version = 1
-revision = 3
+revision = 5
 requires-python = ">=3.12"
 resolution-markers = [
     "python_full_version >= '3.14'",
@@ -298,9 +298,10 @@ requests = [
 
 [[package]]
 name = "google-cloud-aiplatform"
-version = "1.149.0"
+version = "2.10.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
+    { name = "certifi" },
     { name = "docstring-parser" },
     { name = "google-api-core", extra = ["grpc"] },
     { name = "google-auth" },
@@ -314,9 +315,9 @@ dependencies = [
     { name = "pydantic" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/42/2c/fba4adc56f74c0ee0fbd91a39d414ca2c3588dd8b71f9be8a507015ca886/google_cloud_aiplatform-1.149.0.tar.gz", hash = "sha256:a4d73485bf1d727a9e1bbbd13d08d7031490686bbf7d125eb905c1a6c1559a35", size = 10451466, upload-time = "2026-04-27T23:11:54.513Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/4e/6a/d0f2c797c5b07115d74caeb04bb7083de77152d90a81f29e0287df155d49/google_cloud_aiplatform-2.10.0.tar.gz", hash = "sha256:9787cfa3a08b46331a85b867d55d7fb299f56ea50c73af4bfce56f6e37a5ffc7", size = 11256445, upload-time = "2026-11-18T00:14:44.305Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/bf/a0/27719ba23967ef62e52a1d54e013e0fc174bdab8dd84fb300bab9bf0d4a3/google_cloud_aiplatform-1.149.0-py2.py3-none-any.whl", hash = "sha256:e6b5299fa5d303e971cb29a19f03fdbb7b1e3b9d2faa3a788ca933341fba2f2e", size = 8570410, upload-time = "2026-04-27T23:11:50.495Z" },
+    { url = "https://files.pythonhosted.org/packages/f0/cc/6b5ff0d2a44d0befd0d3481fbef20d878704ceb07c432ea6642ab70a65c2/google_cloud_aiplatform-2.10.0-py2.py3-none-any.whl", hash = "sha256:ccb996749788e0d94d7af1686911dae2c2b927fa14fc9a2e51b7c4703db32761", size = 9405684, upload-time = "2026-11-18T00:14:40.208Z" },
 ]
 
 [[package]]
@@ -918,7 +919,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "genai-reference-shared", editable = "../../shared" },
-    { name = "google-cloud-aiplatform", specifier = "==1.149.0" },
+    { name = "google-cloud-aiplatform", specifier = "==2.10.0" },
 ]
 
 [[package]]
